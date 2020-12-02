@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+header {
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 130px 0 160px 0;
+}
+header img {
+  padding: 0 0 70px 0;
+}
+.containe > h1:nth-child(2) {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+h1,
+h2,
+p {
+  padding-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #4a545c;
+}
+p {
+  color: #a7aaae;
+  line-height: 1.5rem;
+}
+.align-1 {
+  text-align: left;
+}
+section {
+  margin: 50px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.container-small {
+  width: 620px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex > * {
+  flex: 1;
+  padding: 10px;
+}
+
+.btn {
+  color: white;
+  padding: 15px 35px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  margin: 15px;
+  font-size: 15px;
+}
+.btn-primary {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 3px hsl(171, 65%, 40%);
+}
+.btn-secoundary {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 3px hsl(233, 53%, 55%);
+}
+
+footer {
+  background-color: #f5f6f8;
+  padding: 30px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+footer .links {
+  flex: 3;
+}
+
+footer .links li {
+  margin-right: 50px;
+}
+
+footer .links li a {
+  text-decoration: none;
+  color: #4a545c;
+}
+
+.social li {
+  padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+  .flex > * {
+    padding: 30px;
+  }
+  .flex .links li {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  .links > li:nth-child(1) > a:nth-child(1) {
+    text-align: center;
+    align-items: center;
+  }
+  .flex .social li {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .align-1 {
+    text-align: center;
+  }
+}
